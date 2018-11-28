@@ -1,8 +1,9 @@
 html, body {
   background-color: black;
   max-width: 1200px;
-  padding: 25px;
+  padding: 10px;
   margin: auto;
+  color: white;
 }
 canvas {
   display: block;

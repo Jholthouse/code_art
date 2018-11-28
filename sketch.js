@@ -23,7 +23,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1200,1200);
+  createCanvas(1200,850);
   mySound.setVolume(0.5);
   mySound.play();
   mySound.loop()
@@ -48,8 +48,8 @@ function draw() {
   imageMode(CENTER);
   if(mouseIsPressed){
   image(img3,mouseX,mouseY);
-  fill(100);
-  text("Depression has many faces", 600, 800);
+  fill(150);
+  text("Depression has many faces", 600, 600);
   }
   else{
   image(img4,mouseX,mouseY);
@@ -208,14 +208,14 @@ function draw() {
   }
   spos+=sspeed;
 
-  if (mouseX > 400 && mouseX < 800 && mouseY > 600) {
-  fill(100)
-  text("Maybe you missed that", 600, 200);
+  if (mouseX > 400 && mouseX < 800 && mouseY > 400) {
+  fill(150)
+  text("Maybe you missed that", 600, 110);
   }
 
-  if (mouseX > 400 && mouseX < 800 && mouseY > 800) {
-  fill(100)
-  text("Click to see it again", 600, 300);
+  if (mouseX > 400 && mouseX < 800 && mouseY > 500) {
+  fill(150)
+  text("Click to see it again", 600, 200);
   }
 
   textAlign(CENTER);
@@ -223,7 +223,7 @@ function draw() {
 }
 
 function drawWords(x){
-  fill(100);
-  text("Did you see that", x, 100);
+  fill(150);
+  text("Did you see that", x, 50);
 
 }
